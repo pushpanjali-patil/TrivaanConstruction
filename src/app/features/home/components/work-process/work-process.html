@@ -1,0 +1,39 @@
+<section class="process-section">
+
+<div class="container">
+
+<app-section-title
+subtitle="OUR PROCESS"
+title="How We Deliver Successful Projects"
+description="From planning to project handover, every step is executed with precision.">
+</app-section-title>
+
+<div class="row">
+
+@for(step of steps(); track step.id){
+
+<div class="col-lg">
+
+<div class="process-card">
+
+<div class="icon">
+
+{{step.icon}}
+
+</div>
+
+<h3>{{step.title}}</h3>
+
+<p>{{step.description}}</p>
+
+</div>
+
+</div>
+
+}
+
+</div>
+
+</div>
+
+</section>

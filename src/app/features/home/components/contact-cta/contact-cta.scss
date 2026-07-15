@@ -1,0 +1,81 @@
+.contact-cta{
+
+    padding:100px 0;
+
+    background:#143d8d;
+
+    color:white;
+
+}
+
+.cta-content{
+
+    text-align:center;
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+.cta-content h2{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.cta-content p{
+
+    font-size:20px;
+
+    color:#ddd;
+
+    margin-bottom:40px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:#ff9900;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#ff8500;
+
+}
+
+.btn-outline-light{
+
+    border:2px solid white;
+
+}

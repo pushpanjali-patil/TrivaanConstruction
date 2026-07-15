@@ -4,7 +4,7 @@ import { SectionTitle } from '../../../../shared/components/section-title/sectio
 @Component({
   selector: 'app-about-preview',
   imports: [
-    SectionTitle
+   // SectionTitle
   ],
   templateUrl: './about-preview.html',
   styleUrl: './about-preview.scss',
