@@ -1,31 +1,43 @@
-<section class="services">
+<section class="services-section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-header">
+   <app-section-title
+            subtitle="OUR SERVICES"
+            title="Engineering Excellence in Every Project"
+            description="Comprehensive construction and infrastructure solutions.">
+        </app-section-title>
 
-            <span>OUR SERVICES</span>
+    <div class="row g-4">
 
-            <h2>
-                Engineering Excellence in Every Project
-            </h2>
+      @for(service of services(); track service.id){
+
+      <div class="col-lg-4">
+
+        <div class="service-card">
+
+          <img
+            [src]="service.image"
+            [alt]="service.title">
+
+          <div class="service-body">
+
+            <h3>{{service.title}}</h3>
+
+            <p>{{service.description}}</p>
+
+            <a href="#">Learn More →</a>
+
+          </div>
 
         </div>
 
-        <div class="row">
+      </div>
 
-            @for(service of services(); track service.id){
-
-                <div class="col-lg-4">
-
-                    <!-- Service Card -->
-
-                </div>
-
-            }
-
-        </div>
+      }
 
     </div>
+
+  </div>
 
 </section>
