@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { SERVICES } from '../../../../core/data/services';
+
 
 @Component({
   selector: 'app-services-preview',
-  imports: [],
+  standalone: true,
   templateUrl: './services-preview.html',
-  styleUrl: './services-preview.scss',
+  styleUrl: './services-preview.scss'
 })
 export class ServicesPreview {
+
+  services = signal(SERVICES);
 
 }
