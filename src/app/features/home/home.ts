@@ -7,6 +7,7 @@ import { WhyChooseUs } from './components/why-choose-us/why-choose-us';
 import { Statistics } from './components/statistics/statistics';
 import { ContactCta } from './components/contact-cta/contact-cta';
 import { WorkProcess } from './components/work-process/work-process';
+import { Footer } from '../../shared/components/footer/footer';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ import { WorkProcess } from './components/work-process/work-process';
   WhyChooseUs,
   Statistics,
   WorkProcess,
-  ContactCta
+  ContactCta,
+  // Footer
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',

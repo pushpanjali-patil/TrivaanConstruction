@@ -1,0 +1,36 @@
+<section class="industries py-5">
+
+  <div class="container">
+
+    <app-section-title
+      subtitle="Industries"
+      title="Industries We Serve">
+    </app-section-title>
+
+    <div class="row g-4">
+
+      @for (industry of industries; track industry.id) {
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="industry-card">
+
+            <div class="icon">
+              <i [class]="industry.icon"></i>
+            </div>
+
+            <h4>{{ industry.title }}</h4>
+
+            <p>{{ industry.description }}</p>
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

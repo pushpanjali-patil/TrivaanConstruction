@@ -1,0 +1,87 @@
+.service-process{
+
+    background:#f8f9fa;
+
+}
+
+.process-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    position:relative;
+
+    height:100%;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.step-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:50%;
+
+    background:#F7941D;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+}
+
+.icon{
+
+    font-size:48px;
+
+    color:#0B3D91;
+
+    margin-bottom:20px;
+
+}
+
+.process-card h5{
+
+    font-weight:700;
+
+    color:#0B3D91;
+
+    margin-bottom:15px;
+
+}
+
+.process-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}

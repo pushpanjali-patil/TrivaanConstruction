@@ -1,163 +1,66 @@
 .custom-navbar {
-
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:999;
-
-    padding:25px 0;
-
-    transition:all .35s ease;
-
-    background:#fff;
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  padding: 20px 0;
+  transition: all .35s ease;
 }
 
-.custom-navbar.home{
-
-    background:transparent;
-
+/* Home page before scrolling */
+.custom-navbar.home {
+  background: transparent;
 }
 
-.custom-navbar.home.scrolled{
-
-    background:#fff;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    padding:15px 0;
-
+/* Home page after scrolling */
+.custom-navbar.home.scrolled {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  padding: 15px 0;
 }
 
-.logo-text{
-
-      color:#0B3D91;
-
-    font-size:38px;
-
-    font-weight:700;
-
+/* Logo */
+.logo-text {
+  color: #0B3D91;
 }
 
-.logo-sub{
-
-    color:#F7941D;
-
-    font-size:20px;
-
-    margin-left:4px;
-
+.logo-sub {
+  color: #F7941D;
 }
 
-.custom-navbar.home .logo-text{
-
-    color:#fff;
-
+.custom-navbar.home .logo-text {
+  color: white;
 }
 
-.custom-navbar.home .logo-sub{
-
-    color:#F7941D;
-
+.custom-navbar.home.scrolled .logo-text {
+  color: #0B3D91;
 }
 
-.custom-navbar.home.scrolled .logo-text{
-
-    color:#0B3D91;
-
+/* Links */
+.nav-link {
+  color: #222;
+  font-weight: 500;
+  transition: .3s;
 }
 
-.nav-link{
-
-    color:#222;
-
-    font-weight:600;
-
-    position:relative;
-
-    transition:.3s;
-
+/* White links only on Home before scrolling */
+.custom-navbar.home .nav-link {
+  color: white;
 }
 
-.custom-navbar.home .nav-link{
-
-    color:#fff;
-
+/* Black links after scrolling */
+.custom-navbar.home.scrolled .nav-link {
+  color: #222;
 }
 
-.custom-navbar.home.scrolled .nav-link{
-
-    color:#222;
-
+/* Hover */
+.nav-link:hover {
+  color: #F7941D;
 }
 
-.nav-link.active{
-
-    color:#0B3D91 !important;
-
-}
-
-.nav-link::after{
-
-    content:'';
-
-    position:absolute;
-
-    left:0;
-
-    bottom:-6px;
-
-    width:0;
-
-    height:2px;
-
-    background:#F7941D;
-
-    transition:.3s;
-
-}
-
-.nav-link:hover::after{
-
-    width:100%;
-
-}
-
-.nav-link:hover{
-
-    color:#0B3D91;
-
-}
-
-.active{
-
-    color:#0B3D91 !important;
-
-}
-
-.quote-btn{
-
-    padding:12px 28px;
-
-    border-radius:40px;
-
-    font-weight:600;
-
-}
-
-@media(max-width:991px){
-
-.custom-navbar{
-
-height:auto;
-
-}
-
-.nav-link{
-
-margin:10px 0;
-
-}
-
+/* Active */
+.nav-link.active {
+  color: #F7941D !important;
+  font-weight: 700;
 }

@@ -1,0 +1,41 @@
+.industries {
+  background: #fff;
+}
+
+.industry-card {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: center;
+  height: 100%;
+  transition: all .3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #0B3D91;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.industry-card h4 {
+  color: #0B3D91;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.industry-card p {
+  color: #666;
+  line-height: 1.7;
+}

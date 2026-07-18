@@ -1,0 +1,49 @@
+<section class="services-grid py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="What We Do"
+            title="Construction Services">
+        </app-section-title>
+
+        <div class="row g-4">
+
+            @for(service of services;track service.id){
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card">
+
+                    <img
+                        [src]="service.image"
+                        [alt]="service.title">
+
+                    <div class="card-body">
+
+                        <i [class]="service.icon"></i>
+
+                        <h4>{{service.title}}</h4>
+
+                        <p>{{service.description}}</p>
+
+                        <a
+                            [routerLink]="service.route">
+
+                            Learn More →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

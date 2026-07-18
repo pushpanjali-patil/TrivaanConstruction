@@ -1,0 +1,26 @@
+.why-choose {
+    background: #f8f9fa;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.feature-item i {
+    color: #F7941D;
+    font-size: 1.3rem;
+}
+
+.why-choose img {
+    border-radius: 20px;
+}

@@ -1,0 +1,44 @@
+<section class="service-process py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Our Workflow"
+            title="How We Deliver Every Project">
+        </app-section-title>
+
+        <div class="row g-4">
+
+            @for(step of process; track step.id){
+
+                <div class="col-lg col-md-6">
+
+                    <div class="process-card">
+
+                        <div class="step-number">
+
+                            {{step.id}}
+
+                        </div>
+
+                        <div class="icon">
+
+                            <i [class]="step.icon"></i>
+
+                        </div>
+
+                        <h5>{{step.title}}</h5>
+
+                        <p>{{step.description}}</p>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

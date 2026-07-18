@@ -1,0 +1,59 @@
+<section class="why-choose py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Why Choose Us"
+            title="Your Trusted Construction Partner">
+        </app-section-title>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img
+                    src="images/about/why-choose.jpg"
+                    class="img-fluid rounded-4 shadow"
+                    alt="Why Choose Trivaan">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <p class="lead mb-4">
+
+                    We combine engineering expertise, skilled professionals,
+                    modern equipment and proven construction practices to
+                    deliver projects that exceed client expectations.
+
+                </p>
+
+                <div class="feature-list">
+
+                    @for(feature of features; track feature){
+
+                        <div class="feature-item">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <span>{{feature}}</span>
+
+                        </div>
+
+                    }
+
+                </div>
+
+                <button class="btn btn-warning btn-lg mt-4">
+
+                    Get Free Quote
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,43 @@
+.core-values {
+    background: #fff;
+}
+
+.value-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px 25px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #ececec;
+    transition: .3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #0B3D91;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.value-card h4 {
+    color: #0B3D91;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.7;
+}

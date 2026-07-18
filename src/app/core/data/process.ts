@@ -1,50 +1,41 @@
-export interface ProcessStep {
+import { ProcessStep } from "../models/process.model";
 
-  id:number;
 
-  title:string;
-
-  description:string;
-
-  icon:string;
-
-}
-
-export const PROCESS_STEPS:ProcessStep[]=[
+export const PROCESS_STEPS: ProcessStep[]= [
 
 {
 id:1,
-title:'Planning',
-description:'Understanding client requirements and site survey.',
-icon:'📋'
+icon:'bi bi-chat-dots-fill',
+title:'Consultation',
+description:'Understanding client requirements and project objectives.'
 },
 
 {
 id:2,
-title:'Design & BOQ',
-description:'Preparing drawings, estimates and execution plan.',
-icon:'📐'
+icon:'bi bi-pencil-square',
+title:'Planning',
+description:'Preparing designs, schedules and construction strategy.'
 },
 
 {
 id:3,
+icon:'bi bi-tools',
 title:'Execution',
-description:'Construction using skilled manpower and machinery.',
-icon:'🚜'
+description:'Executing construction using skilled manpower and equipment.'
 },
 
 {
 id:4,
+icon:'bi bi-shield-check',
 title:'Quality Check',
-description:'Ensuring every stage meets quality standards.',
-icon:'✅'
+description:'Inspection and quality assurance at every stage.'
 },
 
 {
 id:5,
+icon:'bi bi-house-check-fill',
 title:'Project Handover',
-description:'Timely delivery with complete client satisfaction.',
-icon:'🏁'
+description:'Successful completion and client satisfaction.'
 }
 
 ];

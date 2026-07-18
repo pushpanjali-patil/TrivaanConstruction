@@ -1,0 +1,31 @@
+.company-statistics {
+  background: #0B3D91;
+  color: #fff;
+}
+
+.stat-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 18px;
+  padding: 35px 20px;
+  text-align: center;
+  transition: .3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,.12);
+}
+
+.stat-card h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #F7941D;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}

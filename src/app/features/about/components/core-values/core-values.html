@@ -1,0 +1,38 @@
+<section class="core-values py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Our Principles"
+            title="Core Values">
+        </app-section-title>
+
+        <div class="row g-4">
+
+            @for(value of values; track value.title){
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="value-card">
+
+                        <div class="icon">
+
+                            <i class="bi {{value.icon}}"></i>
+
+                        </div>
+
+                        <h4>{{value.title}}</h4>
+
+                        <p>{{value.description}}</p>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

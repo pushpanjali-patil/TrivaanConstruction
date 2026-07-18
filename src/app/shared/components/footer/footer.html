@@ -1,1 +1,81 @@
-<p>footer works!</p>
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Company -->
+            <div class="col-lg-4 mb-4">
+
+                <h3>{{ footer().company.name }}</h3>
+
+                <p>
+                    {{ footer().company.description }}
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 mb-4">
+
+                <h5>Quick Links</h5>
+
+                <ul>
+
+                    @for(link of footer().quickLinks; track link.label){
+
+                        <li>
+                            <a [routerLink]="link.route">
+                                {{ link.label }}
+                            </a>
+                        </li>
+
+                    }
+
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+            <div class="col-lg-3 mb-4">
+
+                <h5>Services</h5>
+
+                <ul>
+
+                    @for(service of footer().services; track service){
+
+                        <li>{{ service }}</li>
+
+                    }
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3 mb-4">
+
+                <h5>Contact</h5>
+
+                <p>{{ footer().company.address }}</p>
+
+                <p>{{ footer().company.phone }}</p>
+
+                <p>{{ footer().company.email }}</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright text-center">
+
+            © 2026 {{ footer().company.name }}. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
