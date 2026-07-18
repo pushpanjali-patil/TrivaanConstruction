@@ -1,0 +1,24 @@
+@if(service){
+
+<app-page-banner
+    [title]="service.title"
+    subtitle="Service Details">
+</app-page-banner>
+
+<app-service-overview
+    [service]="service">
+</app-service-overview>
+
+<app-service-benefits
+    [service]="service">
+</app-service-benefits>
+
+<app-work-process [service]="service"></app-work-process>
+
+<app-related-projects [service]="service"></app-related-projects>
+
+<!-- <app-service-faq></app-service-faq>
+
+<app-service-cta></app-service-cta> -->
+
+}

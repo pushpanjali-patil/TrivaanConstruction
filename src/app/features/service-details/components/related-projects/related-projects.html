@@ -1,0 +1,58 @@
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-warning fw-semibold">
+                Our Projects
+            </span>
+
+            <h2 class="fw-bold">
+                Related Projects
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            @for(project of projects(); track project.id){
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card shadow-sm h-100 border-0">
+
+                        <img
+                            [src]="project.image"
+                            class="card-img-top"
+                            [alt]="project.title">
+
+                        <div class="card-body">
+
+                            <h5>{{project.title}}</h5>
+
+                            <p class="text-muted">
+                                {{project.location}}
+                            </p>
+
+                            <a
+                                [routerLink]="['/projects', project.slug]"
+                                class="btn btn-outline-primary">
+
+                                View Project
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

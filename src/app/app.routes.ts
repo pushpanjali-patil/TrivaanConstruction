@@ -19,17 +19,39 @@ export const routes: Routes = [
         component: Home
       },
       {
+    path: 'test',
+    component: Home
+},
+      {
         path: 'about',
         component: About
       },
+      // {
+      //   path: 'services',
+      //   component: Services
+      // },
       {
-        path: 'services',
-        component: Services
-      },
+    path: 'services',
+    loadComponent: () =>
+        import('./features/services/services')
+            .then(m => m.Services)
+},
+{
+    path: 'services/:slug',
+    loadComponent: () =>
+        import('./features/service-details/service-details')
+            .then(m => m.ServiceDetails)
+},
+      // {
+      //   path: 'projects',
+      //   component: Projects
+      // },
       {
-        path: 'projects',
-        component: Projects
-      },
+    path: 'projects/:slug',
+    loadComponent: () =>
+        import('./features/project-details/project-details')
+            .then(m => m.ProjectDetails)
+},
       {
         path: 'contact',
         component: Contact

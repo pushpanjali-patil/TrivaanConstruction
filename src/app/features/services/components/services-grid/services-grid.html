@@ -27,12 +27,9 @@
 
                         <p>{{service.description}}</p>
 
-                        <a
-                            [routerLink]="service.route">
-
-                            Learn More →
-
-                        </a>
+                    <a [routerLink]="['/services', service.slug]" class="btn btn-primary">
+  Learn More
+</a>
 
                     </div>
 

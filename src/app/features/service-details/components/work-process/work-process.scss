@@ -1,0 +1,59 @@
+.work-process{
+
+    background:#fff;
+
+    .process-card{
+
+        background:#f8f9fa;
+
+        border-radius:15px;
+
+        padding:35px;
+
+        text-align:center;
+
+        transition:.3s;
+
+        height:100%;
+
+        border-top:5px solid #ffc107;
+
+        .number{
+
+            width:70px;
+            height:70px;
+
+            border-radius:50%;
+
+            background:#0b3d91;
+
+            color:#fff;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            margin:0 auto 20px;
+
+            font-size:24px;
+            font-weight:700;
+
+        }
+
+        h5{
+
+            font-weight:600;
+
+        }
+
+        &:hover{
+
+            transform:translateY(-8px);
+
+            box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+        }
+
+    }
+
+}

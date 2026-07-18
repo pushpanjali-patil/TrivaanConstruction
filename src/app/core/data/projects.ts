@@ -2,17 +2,35 @@ export const PROJECTS=[
 
 {
 
-id:1,
+ id: 1,
 
-title:'Industrial Building',
+  slug: 'industrial-road-development',
 
-category:'Industrial',
+  title: 'Industrial Road Development',
 
-location:'Chakan MIDC',
+  category: 'Road Construction',
 
-image:'images/projects/project1.jpg',
+  serviceSlug: 'road-construction',
 
-slug:'industrial-building'
+  shortDescription: 'Industrial road development in MIDC.',
+
+  description: 'Complete road development including earthwork, GSB, WMM, RCC and drainage.',
+
+  location: 'Chakan MIDC',
+
+  client: 'ABC Industries',
+
+  duration: '8 Months',
+
+  completedOn: 'March 2026',
+
+  image: 'assets/images/projects/road1.jpg',
+
+  gallery: [
+      'assets/images/projects/road1.jpg',
+      'assets/images/projects/road2.jpg',
+      'assets/images/projects/road3.jpg'
+  ]
 
 },
 

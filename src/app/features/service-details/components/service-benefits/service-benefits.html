@@ -1,0 +1,48 @@
+<section class="service-benefits py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-warning fw-semibold">
+                Why Choose Us
+            </span>
+
+            <h2 class="fw-bold mt-2">
+                Benefits of Our {{ service().title }}
+            </h2>
+
+            <p class="text-muted">
+                We deliver reliable, high-quality construction services using
+                modern equipment and experienced professionals.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            @for(item of service().benefits; track item){
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="benefit-card">
+
+                        <div class="icon">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <h5>{{ item }}</h5>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

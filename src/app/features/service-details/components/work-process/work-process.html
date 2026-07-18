@@ -1,0 +1,52 @@
+<section class="work-process py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-warning fw-semibold">
+                Our Process
+            </span>
+
+            <h2 class="fw-bold">
+                How We Execute {{ service().title }}
+            </h2>
+
+            <p class="text-muted">
+                Every project follows a systematic process to ensure quality,
+                safety and timely completion.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            @for(step of service().process; track $index){
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="process-card">
+
+                        <div class="number">
+
+                            {{ $index + 1 }}
+
+                        </div>
+
+                        <h5>
+
+                            {{ step }}
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

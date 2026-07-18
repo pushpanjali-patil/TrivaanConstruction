@@ -1,15 +1,29 @@
-export interface Project{
+export interface Project {
 
-id:number;
+  id: number;
 
-title:string;
+  slug: string;
 
-category:string;
+  title: string;
 
-location:string;
+  category: string;        // Matches service.slug
 
-image:string;
+  shortDescription: string;
 
-slug:string;
+  description: string;
+
+  location: string;
+
+  client: string;
+
+  duration: string;
+
+  completedOn: string;
+
+  image: string;
+
+  gallery: string[];
+
+  serviceSlug: string;     // Related service
 
 }
