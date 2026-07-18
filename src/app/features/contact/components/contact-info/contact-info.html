@@ -1,0 +1,40 @@
+<section class="contact-info py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Get In Touch"
+            title="We're Here to Help">
+        </app-section-title>
+
+        <div class="row g-4 mt-2">
+
+            @for (item of contactInfo; track item.id) {
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="info-card h-100">
+
+                        <div class="icon">
+
+                            <i [class]="item.icon"></i>
+
+                        </div>
+
+                        <h5>{{ item.title }}</h5>
+
+                        <h6>{{ item.value }}</h6>
+
+                        <p>{{ item.description }}</p>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,1 +1,51 @@
-<p>faq works!</p>
+<section class="faq py-5">
+
+  <div class="container">
+
+    <app-section-title
+      subtitle="FAQs"
+      title="Frequently Asked Questions">
+    </app-section-title>
+
+    <div class="accordion" id="faqAccordion">
+
+      @for (faq of faqs; track faq.id) {
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              [attr.data-bs-target]="'#faq' + faq.id">
+
+              {{ faq.question }}
+
+            </button>
+
+          </h2>
+
+          <div
+            [id]="'faq' + faq.id"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+
+            <div class="accordion-body">
+
+              {{ faq.answer }}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

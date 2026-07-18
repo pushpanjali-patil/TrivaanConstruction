@@ -1,0 +1,159 @@
+<section class="contact-form-section py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Contact Us"
+            title="Send Us a Message">
+        </app-section-title>
+
+        <div class="form-card mt-5">
+
+            <form [formGroup]="contactForm"
+                  (ngSubmit)="onSubmit()">
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            formControlName="fullName">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            formControlName="email">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            class="form-control"
+                            formControlName="phone">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Company Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            formControlName="company">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Service Required
+                        </label>
+
+                        <select
+                            class="form-select"
+                            formControlName="service">
+
+                            <option value="">
+                                Select Service
+                            </option>
+
+                            @for(service of services; track service){
+
+                                <option [value]="service">
+
+                                    {{service}}
+
+                                </option>
+
+                            }
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Estimated Budget
+                        </label>
+
+                        <select
+                            class="form-select"
+                            formControlName="budget">
+
+                            <option value="">
+                                Select Budget
+                            </option>
+
+                            @for(budget of budgets; track budget){
+
+                                <option [value]="budget">
+
+                                    {{budget}}
+
+                                </option>
+
+                            }
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-12">
+
+                        <label class="form-label">
+                            Message
+                        </label>
+
+                        <textarea
+                            rows="6"
+                            class="form-control"
+                            formControlName="message">
+                        </textarea>
+
+                    </div>
+
+                    <div class="col-12 text-center">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-lg px-5">
+
+                            Send Message
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>

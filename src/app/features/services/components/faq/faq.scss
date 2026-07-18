@@ -1,0 +1,26 @@
+.faq {
+    background: #f8f9fa;
+}
+
+.accordion-item {
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
+
+.accordion-button {
+    font-weight: 600;
+    color: #0B3D91;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #0B3D91;
+    color: white;
+}
+
+.accordion-body {
+    color: #666;
+    line-height: 1.8;
+}
