@@ -1,0 +1,57 @@
+<section class="faq-section py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Frequently Asked Questions"
+            title="Have Questions? We've Got Answers">
+        </app-section-title>
+
+        <div class="accordion mt-5" id="contactFaq">
+
+            @for (faq of faqs; track $index) {
+
+                <div class="accordion-item">
+
+                    <h2
+                        class="accordion-header"
+                        [id]="'heading' + $index">
+
+                        <button
+                            class="accordion-button"
+                            [class.collapsed]="$index !== 0"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            [attr.data-bs-target]="'#collapse' + $index"
+                            [attr.aria-expanded]="$index === 0"
+                            [attr.aria-controls]="'collapse' + $index">
+
+                            {{ faq.question }}
+
+                        </button>
+
+                    </h2>
+
+                    <div
+                        [id]="'collapse' + $index"
+                        class="accordion-collapse collapse"
+                        [class.show]="$index === 0"
+                        data-bs-parent="#contactFaq">
+
+                        <div class="accordion-body">
+
+                            {{ faq.answer }}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,83 @@
+.business-hours {
+    background: #f8f9fa;
+}
+
+.hours-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 28px;
+    border-bottom: 1px solid #eee;
+}
+
+.hour-item:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+.time.closed {
+    color: #dc3545;
+}
+
+.emergency-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--bs-primary);
+    color: #fff;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.emergency-card .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.emergency-card h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.emergency-card p {
+    margin: 0;
+    opacity: .9;
+}
+
+@media (max-width: 768px) {
+
+    .hour-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .emergency-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

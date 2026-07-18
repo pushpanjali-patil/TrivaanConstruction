@@ -1,0 +1,38 @@
+<section class="map-section py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Visit Our Office"
+            title="Find Us on Google Maps">
+        </app-section-title>
+
+        <div class="map-card mt-5">
+
+       <iframe
+    [src]="mapUrl"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+        </div>
+
+        <div class="text-center mt-4">
+
+            <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="btn btn-primary">
+
+                <i class="bi bi-geo-alt-fill me-2"></i>
+
+                Get Directions
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

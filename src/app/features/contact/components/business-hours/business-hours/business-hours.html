@@ -1,0 +1,61 @@
+<section class="business-hours py-5">
+
+    <div class="container">
+
+        <app-section-title
+            subtitle="Business Hours"
+            title="We're Available When You Need Us">
+        </app-section-title>
+
+        <div class="hours-card mt-5">
+
+            @for (item of businessHours; track item.day) {
+
+                <div class="hour-item">
+
+                    <div class="day">
+
+                        <i class="bi bi-calendar3 me-2"></i>
+
+                        {{ item.day }}
+
+                    </div>
+
+                    <div
+                        class="time"
+                        [class.closed]="item.time === 'Closed'">
+
+                        {{ item.time }}
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+        <div class="emergency-card mt-4">
+
+            <div class="icon">
+
+                <i class="bi bi-headset"></i>
+
+            </div>
+
+            <div>
+
+                <h5>Need Immediate Assistance?</h5>
+
+                <p>
+                    Our team is available to assist you with urgent project
+                    inquiries during business hours.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

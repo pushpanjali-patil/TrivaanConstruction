@@ -1,0 +1,33 @@
+.faq-section {
+    background: #ffffff;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+.accordion-button {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--bs-primary);
+    color: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 20px;
+    color: #6c757d;
+    line-height: 1.8;
+}
