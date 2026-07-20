@@ -26,7 +26,12 @@
 
             <p>{{service.description}}</p>
 
-            <a href="#">Learn More →</a>
+            <!-- <a href="#">Learn More →</a> -->
+             <a
+    [routerLink]="['/services', service.slug]"
+    class="btn btn-primary">
+    Learn More
+</a>
 
           </div>
 

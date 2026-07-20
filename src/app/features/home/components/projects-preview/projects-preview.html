@@ -25,11 +25,11 @@
 
                             <span>{{project.location}}</span>
 
-                            <button class="btn-view">
-
-                                View Details
-
-                            </button>
+                          <button
+    [routerLink]="['/projects', project.slug]"
+    class="btn btn-outline-primary">
+    View Details
+                          </button>
 
                         </div>
 

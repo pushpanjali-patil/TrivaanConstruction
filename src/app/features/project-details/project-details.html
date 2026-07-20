@@ -1,1 +1,61 @@
-<p>project-details works!</p>
+@if (project) {
+
+<app-page-banner
+  [title]="project.title"
+  subtitle="Project Details">
+</app-page-banner>
+
+<section class="container py-5">
+
+  <div class="row g-5">
+
+    <div class="col-lg-7">
+
+      <img
+        [src]="project.image"
+        [alt]="project.title"
+        class="img-fluid rounded shadow mb-4">
+
+      <h2>{{ project.title }}</h2>
+
+      <p class="text-muted">
+        {{ project.shortDescription }}
+      </p>
+
+      <p>
+        {{ project.description }}
+      </p>
+
+    </div>
+
+    <div class="col-lg-5">
+
+      <div class="card shadow-sm">
+
+        <div class="card-header">
+          <h4 class="mb-0">Project Information</h4>
+        </div>
+
+        <div class="card-body">
+
+          <p><strong>Client:</strong> {{ project.client }}</p>
+
+          <p><strong>Location:</strong> {{ project.location }}</p>
+
+          <p><strong>Category:</strong> {{ project.category }}</p>
+
+          <p><strong>Duration:</strong> {{ project.duration }}</p>
+
+          <p><strong>Completed:</strong> {{ project.completedOn }}</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+}

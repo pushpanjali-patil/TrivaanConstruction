@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { PROJECTS } from '../../../../core/data/projects';
 import { SectionTitle } from '../../../../shared/components/section-title/section-title';
 import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on-scroll';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on
   standalone: true,
   imports: [
     SectionTitle,
-    RevealOnScrollDirective
+    RevealOnScrollDirective,
+    RouterLink
   ],
   templateUrl: './projects-preview.html',
   styleUrl: './projects-preview.scss'

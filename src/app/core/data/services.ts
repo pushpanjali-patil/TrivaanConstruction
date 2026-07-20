@@ -64,7 +64,7 @@ export const SERVICES: Service[] = [
     slug: 'building-construction',
     shortDescription: 'Residential, commercial and industrial construction.',
     description: 'Residential, commercial and industrial construction.',
-    image: 'images/services/building.jpg',
+    image: 'images/services/road.jpg',
     icon: 'bi bi-building-fill',
     features: [
       'Residential',
@@ -111,7 +111,7 @@ export const SERVICES: Service[] = [
     slug: 'paver-block-works',
     shortDescription: 'Footpaths and parking paving.',
     description: 'Footpaths, parking and landscape paving.',
-    image: 'images/services/paver.jpg',
+    image: 'images/services/road.jpg',
     icon: 'bi bi-grid-fill',
     features: [
       'Parking',
@@ -127,7 +127,7 @@ export const SERVICES: Service[] = [
     slug: 'drainage-works',
     shortDescription: 'Storm water drainage systems.',
     description: 'Storm water and underground drainage systems.',
-    image: 'images/services/drainage.jpg',
+    image: 'images/services/road.jpg',
     icon: 'bi bi-water',
     features: [
       'Storm Water',

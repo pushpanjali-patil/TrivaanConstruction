@@ -42,7 +42,7 @@ benefits: [
     shortDescription: 'Residential and commercial construction services.',
     description:
       'Complete building construction from foundation to finishing.',
-    image: 'assets/images/services/building.jpg',
+    image: 'assets/images/services/earthwork.jpg',
     icon: 'bi bi-building-fill',
  benefits: [
     'High Structural Strength',

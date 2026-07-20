@@ -42,10 +42,10 @@ export const routes: Routes = [
         import('./features/service-details/service-details')
             .then(m => m.ServiceDetails)
 },
-      // {
-      //   path: 'projects',
-      //   component: Projects
-      // },
+      {
+        path: 'projects',
+        component: Projects
+      },
       {
     path: 'projects/:slug',
     loadComponent: () =>
