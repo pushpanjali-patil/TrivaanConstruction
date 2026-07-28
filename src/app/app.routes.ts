@@ -4,10 +4,8 @@ import { PublicLayout } from './layouts/public-layout/public-layout';
 
 import { Home } from './features/home/home';
 import { About } from './features/about/about';
-import { Services } from './features/services/services';
 import { Projects } from './features/projects/projects';
 import { Contact } from './features/contact/contact';
-import { Careers } from './features/careers/careers';
 
 export const routes: Routes = [
   {
@@ -26,10 +24,6 @@ export const routes: Routes = [
         path: 'about',
         component: About
       },
-      // {
-      //   path: 'services',
-      //   component: Services
-      // },
       {
     path: 'services',
     loadComponent: () =>
@@ -56,10 +50,6 @@ export const routes: Routes = [
         path: 'contact',
         component: Contact
       },
-      {
-        path: 'careers',
-        component: Careers
-      }
     ]
   },
 

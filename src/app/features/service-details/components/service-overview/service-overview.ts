@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, input } from '@angular/core';
-import { Service } from '../../../../core/models/service.model';
+import { Component, inject, input } from '@angular/core';
+import {  ServiceDto } from '../../../../core/models/service.model';
 import { RouterLink } from '@angular/router';
+import { MediaService } from '../../../../core/services/media.service';
 
 @Component({
   selector: 'app-service-overview',
@@ -11,7 +12,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './service-overview.scss'
 })
 export class ServiceOverview {
-
-  service = input.required<Service>();
+readonly media = inject(MediaService);
+  service = input.required<ServiceDto>();
 
 }

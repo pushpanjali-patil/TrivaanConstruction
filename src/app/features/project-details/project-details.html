@@ -11,9 +11,9 @@
 
     <div class="col-lg-7">
 
-      <img
-        [src]="project.image"
-        [alt]="project.title"
+     <img
+  [src]="media.getUrl(project.coverImage)"
+  [alt]="project.title"
         class="img-fluid rounded shadow mb-4">
 
       <h2>{{ project.title }}</h2>

@@ -1,23 +1,21 @@
-export interface Service {
+export interface ServiceDto {
 
-  id:number;
+  id: number;
 
-  slug:string;
+  name: string;
 
-  title:string;
+  slug: string;
 
-  shortDescription:string;
+  icon: string;
 
-  description:string;
+  shortDescription: string;
 
-  image:string;
+  description: string;
 
-  bannerImage?:string;
+  imageUrl: string;
 
-  icon:string;
-  features: string[];
-  benefits?:string[];
+  displayOrder: number;
 
-  process?:string[];
+  isActive: boolean;
 
 }

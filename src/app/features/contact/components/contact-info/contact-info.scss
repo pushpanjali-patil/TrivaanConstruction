@@ -1,47 +1,51 @@
-.contact-info {
+.contact-card {
     background: #fff;
-}
-
-.info-card {
-    background: #fff;
-    padding: 2rem;
-    text-align: center;
     border-radius: 16px;
-    border: 1px solid #ececec;
-    transition: all .3s ease;
-    height: 100%;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.info-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px 0;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #ececec;
+    }
 }
 
 .icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 1.25rem;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+
     border-radius: 50%;
-    background: var(--bs-primary);
-    color: #fff;
+    background: #0B5ED7;
+
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    justify-content: center;
+
+    color: #fff;
+    font-size: 22px;
 }
 
-h5 {
+.content h5 {
+    margin-bottom: 4px;
     font-weight: 600;
-    margin-bottom: .75rem;
+    color: #222;
 }
 
-h6 {
-    color: var(--bs-primary);
-    margin-bottom: .75rem;
+.content h6 {
+    margin-bottom: 8px;
+    color: #0B5ED7;
     font-weight: 600;
 }
 
-p {
-    color: #6c757d;
+.content p {
     margin: 0;
+    color: #6c757d;
+    line-height: 1.6;
 }

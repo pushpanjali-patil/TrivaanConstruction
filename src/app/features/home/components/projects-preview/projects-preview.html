@@ -9,15 +9,17 @@
 
         <div class="row g-4">
 
-            @for(project of projects(); track project.id){
+            <!-- @for(project of projects(); track project.id) -->
+            @for(project of projects; track project.id)
+            {
 
                 <div class="col-lg-4">
 
                     <div class="project-card">
 
-                        <img
-                            [src]="project.image"
-                            [alt]="project.title">
+                       <img
+  [src]="media.getUrl(project.coverImage)"
+  [alt]="project.title">
 
                         <div class="project-overlay">
 

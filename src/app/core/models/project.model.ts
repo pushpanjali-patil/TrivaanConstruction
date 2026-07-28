@@ -1,29 +1,16 @@
-export interface Project {
-
+export interface ProjectDto {
   id: number;
-
-  slug: string;
-
   title: string;
-
-  category: string;        // Matches service.slug
-
+  slug: string;
+  category: string;
   shortDescription: string;
-
   description: string;
-
   location: string;
-
   client: string;
-
   duration: string;
-
-  completedOn: string;
-
-  image: string;
-
-  gallery: string[];
-
-  serviceSlug: string;     // Related service
-
+  completedOn?: string;
+  coverImage: string;
+  isFeatured: boolean;
+  displayOrder: number;
+  serviceId: number;
 }

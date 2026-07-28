@@ -1,18 +1,35 @@
 <app-page-banner
-
-title="Projects"
-
-subtitle="Our Latest Works"
-
-backgroundImage="images/projects/banner.jpg">
-
+    title="Projects"
+    subtitle="Home / Projects">
 </app-page-banner>
-<app-projects-overview></app-projects-overview>
 
-<!-- <app-project-filter></app-project-filter>
+<section class="projects-section">
 
-<app-project-grid></app-project-grid>
+    <div class="container">
 
-<app-testimonials></app-testimonials>
+        <app-section-title
+            subtitle="OUR PROJECTS"
+            title="Building Landmarks That Last">
+        </app-section-title>
 
-<app-projects-cta></app-projects-cta> -->
+        <div class="row g-4 mt-4">
+
+            @for(project of projects; track project.id){
+
+                <div class="col-lg-4 col-md-6">
+
+                    <app-project-card
+                        [project]="project">
+                    </app-project-card>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- <app-cta-section></app-cta-section> -->

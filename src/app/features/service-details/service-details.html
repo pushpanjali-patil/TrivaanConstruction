@@ -1,24 +1,30 @@
-@if(service){
+@if (service(); as selectedService) {
 
 <app-page-banner
-    [title]="service.title"
+    [title]="selectedService.name"
     subtitle="Service Details">
 </app-page-banner>
 
 <app-service-overview
-    [service]="service">
+    [service]="selectedService">
 </app-service-overview>
 
-<!--  <app-service-benefits
-    [service]="service">
+<!--
+<app-service-benefits
+    [service]="selectedService">
 </app-service-benefits>
 
-<app-work-process [service]="service"></app-work-process>
+<app-work-process
+    [service]="selectedService">
+</app-work-process>
 
-<app-related-projects [service]="service"></app-related-projects> -->
+<app-related-projects
+    [service]="selectedService">
+</app-related-projects>
 
-<!-- <app-service-faq></app-service-faq>
+<app-service-faq></app-service-faq>
 
-<app-service-cta></app-service-cta> -->
+<app-service-cta></app-service-cta>
+-->
 
 }

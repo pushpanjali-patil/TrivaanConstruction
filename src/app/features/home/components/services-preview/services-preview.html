@@ -17,12 +17,12 @@
         <div class="service-card">
 
           <img
-            [src]="service.image"
-            [alt]="service.title">
+                              [src]="media.getUrl(service.imageUrl)"
+            [alt]="service.name">
 
           <div class="service-body">
 
-            <h3>{{service.title}}</h3>
+            <h3>{{service.name}}</h3>
 
             <p>{{service.description}}</p>
 

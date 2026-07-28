@@ -1,0 +1,51 @@
+<div class="project-card">
+
+    <div class="project-image">
+
+       <img
+  [src]="media.getUrl(project().coverImage)"
+  [alt]="project().title">
+
+        <span class="category">
+
+            {{ project().category }}
+
+        </span>
+
+    </div>
+
+    <div class="card-body">
+
+        <h4>
+
+            {{ project().title }}
+
+        </h4>
+
+        <div class="location">
+
+            <i class="bi bi-geo-alt-fill"></i>
+
+            {{ project().location }}
+
+        </div>
+
+        <p>
+
+            {{ project().shortDescription }}
+
+        </p>
+
+        <a
+            [routerLink]="['/projects', project().slug]"
+            class="view-btn">
+
+            View Details
+
+            <i class="bi bi-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</div>

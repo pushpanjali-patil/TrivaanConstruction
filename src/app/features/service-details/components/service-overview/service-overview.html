@@ -8,9 +8,10 @@
 
             <div class="col-lg-6">
 
+                
                 <img
-                    [src]="service().image"
-                    [alt]="service().title"
+                   [src]="media.getUrl(service().imageUrl)"
+                    [alt]="service().name"
                     class="img-fluid rounded-4 shadow">
 
             </div>
@@ -24,7 +25,7 @@
                 </span>
 
                 <h2 class="mb-4">
-                    {{ service().title }}
+                    {{ service().name }}
                 </h2>
 
                 <p class="lead">
@@ -33,7 +34,7 @@
 
                 </p>
 
-                <div class="row mt-4">
+                <!-- <div class="row mt-4">
 
                     @for(feature of service().features; track feature){
 
@@ -51,7 +52,7 @@
 
                     }
 
-                </div>
+                </div> -->
 
                 <a
                     routerLink="/contact"
