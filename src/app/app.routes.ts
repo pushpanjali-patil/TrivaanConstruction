@@ -50,6 +50,12 @@ export const routes: Routes = [
         path: 'contact',
         component: Contact
       },
+      {
+    path: '**',
+    loadComponent: () =>
+        import('./features/not-found/not-found/not-found')
+            .then(m => m.NotFound)
+}
     ]
   },
 

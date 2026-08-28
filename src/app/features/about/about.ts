@@ -9,7 +9,7 @@ import { AboutCta } from './components/about-cta/about-cta';
 
 @Component({
   selector: 'app-about',
-  imports: [PageBanner,CompanyStory,MissionVision,CoreValues,WhyChoose,CompanyStatistics,AboutCta],
+  imports: [PageBanner,CompanyStory,MissionVision,CoreValues,WhyChoose,AboutCta],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })

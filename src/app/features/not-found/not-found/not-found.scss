@@ -1,0 +1,130 @@
+.not-found-section {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:140px 20px 120px;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef4fb 100%);
+}
+
+.not-found-content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeUp .6s ease;
+}
+
+.illustration {
+    margin-bottom: 25px;
+}
+
+.illustration img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+}
+
+.error-code {
+    font-size: clamp(5rem, 12vw, 8rem);
+    font-weight: 800;
+    color: #0B3D91;
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px 0 15px;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: #1f2937;
+}
+
+p {
+    margin: 0 auto 35px;
+    max-width: 550px;
+    color: #6b7280;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.action-buttons .btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.quick-links {
+    border-top: 1px solid #dee2e6;
+    padding-top: 30px;
+}
+
+.quick-links h5 {
+    color: #0B3D91;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.links a:hover {
+    color: #F7941D;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .not-found-section {
+        min-height: calc(100vh - 120px);
+        padding: 90px 15px 40px;
+    }
+
+    .illustration img {
+        max-width: 240px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-buttons .btn {
+        width: 250px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
