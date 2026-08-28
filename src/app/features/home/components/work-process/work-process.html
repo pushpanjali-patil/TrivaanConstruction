@@ -1,39 +1,51 @@
 <section class="process-section" appRevealOnScroll>
 
-<div class="container">
+  <div class="container">
 
-<app-section-title
-subtitle="OUR PROCESS"
-title="How We Deliver Successful Projects"
-description="From planning to project handover, every step is executed with precision.">
-</app-section-title>
+    <app-section-title
+      subtitle="OUR PROCESS"
+      title="How We Deliver Successful Projects"
+      description="From planning to project handover, every step is executed with precision.">
+    </app-section-title>
 
-<div class="row">
 
-@for(step of steps(); track step.id){
+    <div class="process-timeline">
 
-<div class="col-lg">
+      @for (step of steps(); track step.id; let i = $index) {
 
-<div class="process-card">
+        <div class="process-step">
 
-<div class="icon">
+          <!-- Number -->
+          <div class="step-number">
+            {{ (i + 1).toString().padStart(2, '0') }}
+          </div>
 
-{{step.icon}}
+          <!-- Connector -->
+          @if (i < steps().length - 1) {
+            <div class="step-connector"></div>
+          }
 
-</div>
+          <!-- Content -->
+          <div class="process-content">
 
-<h3>{{step.title}}</h3>
+            <h3>
+              {{ step.title }}
+            </h3>
 
-<p>{{step.description}}</p>
+            <div class="step-line"></div>
 
-</div>
+            <p>
+              {{ step.description }}
+            </p>
 
-</div>
+          </div>
 
-}
+        </div>
 
-</div>
+      }
 
-</div>
+    </div>
+
+  </div>
 
 </section>

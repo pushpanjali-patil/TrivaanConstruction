@@ -1,20 +1,51 @@
-.contact-section{
+.contact-section {
+    padding: 70px 0 90px;
 
-    padding:80px 0;
-    background:#f8f9fa;
-
+    background: #f5f7fa;
 }
 
-.contact-card{
+.contact-row {
+    align-items: stretch;
 
-    background:#fff;
+    margin-top: 0;
+}
 
-    border-radius:20px;
+.contact-row > div {
+    margin-bottom: 30px;
+}
 
-    padding:35px;
+.contact-card {
+    height: 100%;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    background: #ffffff;
 
-    height:100%;
+    border-radius: 14px;
+
+    border: 1px solid #edf0f4;
+
+    box-shadow: 0 8px 30px rgba(15, 35, 60, 0.06);
+
+    overflow: hidden;
+}
+
+
+/* Make both cards equal height */
+
+.contact-card > * {
+    height: 100%;
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .contact-section {
+        padding: 50px 0 70px;
+    }
+
+    .contact-row > div {
+        margin-bottom: 25px;
+    }
 
 }

@@ -1,39 +1,304 @@
-.process-section{
+.process-section {
+  padding: 100px 0 120px;
 
-padding:120px 0;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url('/assets/images/sections/process.jpg');
 
-background:#fff;
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: fixed;
+
+  overflow: hidden;
+}
+
+
+/* =====================================
+   TIMELINE
+   ===================================== */
+
+.process-timeline {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 0;
+
+  margin-top: 80px;
+}
+
+
+/* =====================================
+   STEP
+   ===================================== */
+
+.process-step {
+  position: relative;
+
+  text-align: center;
+
+  min-width: 0;
+}
+
+
+/* =====================================
+   NUMBER CIRCLE
+   ===================================== */
+
+.step-number {
+  position: relative;
+
+  z-index: 2;
+
+  width: 68px;
+  height: 68px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f7931e;
+
+  color: #ffffff;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(247, 147, 30, 0.25);
+
+  border: 4px solid #ffffff;
+}
+
+
+/* =====================================
+   CONNECTOR
+   ===================================== */
+
+.step-connector {
+  position: absolute;
+
+  top: 34px;
+
+  left: calc(50% + 34px);
+
+  width: calc(100% - 68px);
+
+  border-top: 2px dashed #f7931e;
+
+  z-index: 1;
+}
+
+
+/* =====================================
+   CONTENT
+   ===================================== */
+
+.process-content {
+  padding: 30px 20px 0;
+}
+
+.process-content h3 {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  color: #0b2545;
+}
+
+
+/* =====================================
+   ORANGE LINE
+   ===================================== */
+
+.step-line {
+  width: 45px;
+  height: 3px;
+
+  margin: 15px auto;
+
+  background: #f7931e;
+
+  border-radius: 2px;
+}
+
+
+/* =====================================
+   DESCRIPTION
+   ===================================== */
+
+.process-content p {
+  max-width: 210px;
+
+  margin: 0 auto;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #555;
+}
+
+
+/* =====================================
+   TABLET
+   ===================================== */
+
+@media (max-width: 991px) {
+
+  .process-section {
+    padding: 80px 0 90px;
+
+    background-attachment: scroll;
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+
+    row-gap: 60px;
+
+    margin-top: 60px;
+  }
+
+  .step-connector {
+    display: none;
+  }
 
 }
 
-.process-card{
 
-text-align:center;
+/* =====================================
+   MOBILE
+   ===================================== */
 
-padding:30px;
+@media (max-width: 767px) {
+
+  .process-section {
+    padding: 70px 0 80px;
+  }
+
+  .process-timeline {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    margin-top: 50px;
+  }
+
+  .process-step {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    column-gap: 20px;
+
+    text-align: left;
+
+    padding-bottom: 45px;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+
+    margin: 0;
+
+    font-size: 18px;
+  }
+
+  .step-connector {
+    display: block;
+
+    top: 60px;
+    left: 29px;
+
+    width: 2px;
+    height: calc(100% - 60px);
+
+    border-top: none;
+
+    border-left: 2px dashed #f7931e;
+  }
+
+  .process-content {
+    padding: 5px 0 0;
+  }
+
+  .process-content h3 {
+    font-size: 20px;
+  }
+
+  .step-line {
+    margin: 12px 0;
+  }
+
+  .process-content p {
+    max-width: none;
+
+    margin: 0;
+
+    font-size: 14px;
+  }
 
 }
 
-.icon{
 
-font-size:60px;
+/* =====================================
+   SMALL MOBILE
+   ===================================== */
 
-margin-bottom:20px;
+@media (max-width: 480px) {
 
-}
+  .process-section {
+    padding: 60px 0 70px;
+  }
 
-.process-card h3{
+  .process-step {
+    grid-template-columns: 60px 1fr;
 
-font-size:26px;
+    column-gap: 15px;
+  }
 
-margin-bottom:15px;
+  .step-number {
+    width: 52px;
+    height: 52px;
 
-}
+    font-size: 16px;
+  }
 
-.process-card p{
+  .step-connector {
+    left: 25px;
+    top: 52px;
+  }
 
-color:#666;
+  .process-content h3 {
+    font-size: 18px;
+  }
 
-line-height:1.7;
+  .process-content p {
+    font-size: 13px;
+  }
 
 }

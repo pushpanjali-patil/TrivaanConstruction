@@ -2,7 +2,8 @@
 
 <app-page-banner
   [title]="project.title"
-  subtitle="Project Details">
+  subtitle="Project Details"
+  [backgroundImage]="media.getUrl(project.coverImage)">
 </app-page-banner>
 
 <section class="container py-5">

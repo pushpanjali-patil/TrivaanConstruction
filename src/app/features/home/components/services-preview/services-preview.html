@@ -27,11 +27,14 @@
             <p>{{service.description}}</p>
 
             <!-- <a href="#">Learn More →</a> -->
-             <a
+             <!-- <a
     [routerLink]="['/services', service.slug]"
     class="btn btn-primary">
     Learn More
-</a>
+</a> -->
+  <button  [routerLink]="['/services', service.slug]" class="primary-btn">
+    Learn More
+        </button>
 
           </div>
 

@@ -5,7 +5,7 @@ export const PROCESS_STEPS: ProcessStep[]= [
 
 {
 id:1,
-icon:'bi bi-chat-dots-fill',
+icon:'/images/about/logo5.jpg',
 title:'Consultation',
 description:'Understanding client requirements and project objectives.'
 },

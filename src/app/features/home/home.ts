@@ -15,7 +15,7 @@ import { WorkProcess } from './components/work-process/work-process';
   ServicesPreview,
   ProjectsPreview,
   WhyChooseUs,
-  Statistics,
+  // Statistics,
   WorkProcess,
   ContactCta,
   // Footer
